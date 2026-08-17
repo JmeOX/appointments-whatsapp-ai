@@ -17,14 +17,7 @@ The differentiator isn't the CRUD (any framework can do that) — it's the Whats
 
 ## Preview
 
-**Appointments dashboard**
-![Appointments list](./public/screenshots/appointments-list.png)
-
-**Create a new appointment**
-![New appointment form](./public/screenshots/new-appointment.png)
-
-**Appointment detail**
-![Appointment detail](./public/screenshots/appointment-detail.png)
+ <table> <tr> <td><img src="./public/screenshots/appointments-list.png" width="280"/></td> <td><img src="./public/screenshots/new-appointment.png" width="280"/></td> <td><img src="./public/screenshots/appointment-detail.png" width="280"/></td> </tr> <tr> <td align="center"><sub>Dashboard</sub></td> <td align="center"><sub>New appointment</sub></td> <td align="center"><sub>Detail view</sub></td> </tr> </table>
 
 ## Tech Stack
 
