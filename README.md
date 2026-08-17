@@ -1,6 +1,6 @@
 # Appointments WhatsApp AI
 
-A WhatsApp-native appointment management system built to solve a real problem: most scheduling tools (Calendly, Cal.com, Acuity) are email-first and disconnected from how businesses in LATAM actually communicate with their clients — through WhatsApp.
+A WhatsApp-native appointment management system built to solve a real problem: most scheduling tools (Calendly, [Cal.com](http://Cal.com), Acuity) are email-first and disconnected from how businesses in LATAM actually communicate with their clients — through WhatsApp.
 
 This project combines a clean web dashboard with automated WhatsApp reminders and natural-language appointment management powered by an LLM.
 
@@ -14,6 +14,17 @@ Business owners manage appointments manually today: a mental note, a spreadsheet
 - A natural-language interface where the owner can type something like _"move Ana's appointment to Friday at 3pm"_ and have an LLM parse the intent and update the record — no forms required for quick edits.
 
 The differentiator isn't the CRUD (any framework can do that) — it's the WhatsApp-native automation layer and the LLM-powered natural language control, aimed at a market that lives on WhatsApp rather than email.
+
+## Preview
+
+**Appointments dashboard**
+![Appointments list](./public/screenshots/appointments-list.png)
+
+**Create a new appointment**
+![New appointment form](./public/screenshots/new-appointment.png)
+
+**Appointment detail**
+![Appointment detail](./public/screenshots/appointment-detail.png)
 
 ## Tech Stack
 
@@ -74,6 +85,7 @@ appointments-whatsapp-ai/
 │   └── types.ts                # Shared TypeScript types
 ├── actions/appointments.test.ts # Unit tests for Server Actions
 └── vitest.config.mts
+
 ```
 
 ## Database Schema
@@ -92,6 +104,7 @@ create table appointments (
 );
 
 alter table appointments enable row level security;
+
 ```
 
 > Row Level Security is currently permissive (`using (true)`) as the project has no authentication yet. This is documented technical debt, to be replaced with owner-scoped policies once user auth is added.
@@ -111,6 +124,7 @@ npm run dev
 
 # Run tests
 npm run test
+
 ```
 
 ## Environment Variables
@@ -118,6 +132,7 @@ npm run test
 ```
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
+
 ```
 
 ## Why This Project
